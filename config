@@ -10,9 +10,7 @@ setup_default()
   # Use scripts to setup
 
  # ./scripts/setup_xterm.sh
-  ./scripts/setup_dotfiles.sh
-  ./scripts/setup_ohmyzsh.sh
-  ./scripts/setup_gnometerm.sh
+  test -f ~/dotfiles/install.sh && /bin/bash ~/dotfiles/install.sh
 }
 
 
@@ -22,23 +20,16 @@ setup_audio()
 }
 
 
-setup_network()
-{
-  sudo adduser "$(whoami)" netdev
-}
-
-
 whiptail\
   --title "Config Menu"\
-  --yesno "This will configure dotfiles like 'Jimmy' wants it. Are you sure?"\
+  --yesno "This will configure the user and install dotfiles (if available). Are you sure?"\
   $NOLIN $NOCOL
 
 exitstatus=$?
 
 if [ $exitstatus = 0 ]; then
-  setup_default
   setup_audio
-  setup_network
+  setup_default
 else
   exit 0
 fi
