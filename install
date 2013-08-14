@@ -77,9 +77,6 @@ setup_i3()
 setup_default()
 {
   # Use scripts to setup
-  ./scripts/setup_font_monaco.sh
-
-  ./scripts/setup_dropbox.sh
   ./scripts/setup_networkapplet.sh # WARNING, See script
 }
 
