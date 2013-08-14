@@ -78,6 +78,7 @@ setup_default()
 {
   # Use scripts to setup
   #./scripts/setup_networkapplet.sh # Not needed in 13.04
+  echo
 }
 
 
