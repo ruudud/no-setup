@@ -1,4 +1,4 @@
-# No Setup, Installation setup script for Ubuntu Minimal 12.04
+# No Setup, Installation setup script for Ubuntu Minimal
 
 ![Screenshot](https://raw.github.com/charnley/no-setup/master/screenshots/screenshot_1.png)
 
