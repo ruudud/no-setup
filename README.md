@@ -5,7 +5,7 @@
 ## Why?
 
 This is a installation script for
-[Ubuntu Minimal 12.04](https://help.ubuntu.com/community/Installation/MinimalCD)
+[Ubuntu Minimal >=12.04](https://help.ubuntu.com/community/Installation/MinimalCD)
 based around the [window manager i3](http://i3wm.org)
 
 The installation script is an alternative work-environment to
